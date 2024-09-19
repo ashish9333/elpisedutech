@@ -317,3 +317,49 @@
           padding-bottom: 2rem;
       }
   }
+
+
+  .carousel {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 100%;
+    }
+}
